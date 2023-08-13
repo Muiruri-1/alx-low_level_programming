@@ -10,26 +10,17 @@
  */
 int main(void)
 {
-	int num1 = 0;
+	int num;
 
-	while (num1 < 10)
+	for (num = 0; num < 10; num++)
 	{
-		int num2 = 0;
+		putchar(num + '0');
 
-		while (num2 < 10)
+		if (num != 9)
 		{
-			putchar(num1 + '0');
-			putchar(num2 + '0');
-
-			if (num1 != 9 || num2 != 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-
-			num2++;
+			putchar(',');
+			putchar(' ');
 		}
-		num1++;
 	}
 
 	putchar('\n');
