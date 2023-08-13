@@ -3,26 +3,22 @@
 /**
  * main - Entry point
  *
- * This program prints the lowercase alphabet followed by the uppercase alphabet
- * using the putchar function.
+ * Description: Prints the alphabet in lowercase, then in uppercase.
+ * Only uses the putchar function three times.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char lowercase = 'a';
-	char uppercase = 'A';
+	char lowercase, uppercase;
 
-	while (lowercase <= 'z')
+	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
 		putchar(lowercase);
-		lowercase++;
 	}
-
-	while (uppercase <= 'Z')
+	for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
 	{
 		putchar(uppercase);
-		uppercase++;
 	}
 
 	putchar('\n');
