@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point of the program.
@@ -9,7 +9,7 @@ int main(void)
 {
 	int limit = 1024;
 	int sum = 0;
-	int i, digit;
+	int i;
 
 	for (i = 3; i < limit; i++)
 	{
@@ -19,14 +19,7 @@ int main(void)
 		}
 	}
 
-	while (sum > 0)
-	{
-		digit = sum % 10;
-		_putchar(digit + '0');
-		sum /= 10;
-	}
-
-	_putchar('\n');
+	printf("%d\n", sum);
 
 	return (0);
 }
