@@ -1,40 +1,30 @@
 #include "main.h"
 
 /**
- * _putchar - Writes a character to stdout
- * @c: The character to print
- *
- * Return: On success, 1. On error, -1.
- */
-int _putchar(char c)
-{
-    /* Your implementation of _putchar */
-    /* ... */
-}
-
-/**
- * _strcat - Concatenates two strings
- * @dest: Destination string
- * @src: Source string to append to dest
- *
- * Return: Pointer to the resulting string `dest`
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
-	char *dest_ptr = dest;
+	int i;
+	int j;
 
-	while (*dest_ptr != '\0')
-		dest_ptr++;
-
-	while (*src != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		*dest_ptr = *src;
-		dest_ptr++;
-		src++;
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
-	*dest_ptr = '\0';
-
+	dest[i] = '\0';
 	return (dest);
 }
 
