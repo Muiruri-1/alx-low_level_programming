@@ -33,16 +33,6 @@ int mul(int a, int b)
 	return (a * b);
 }
 /**
- * my_div - divides two ints
- * @a: 1st intt
- * @b: 2nd int
- * Return: div
- */
-int my_div(int a, int b)
-{
-	return (a / b);
-}
-/**
  * mod - mod between two ints
  * @a: 1st int
  * @b: 2nd int
